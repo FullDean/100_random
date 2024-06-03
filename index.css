@@ -1,0 +1,93 @@
+@font-face {
+    font-family: "Open Sans";
+    src: url("fonts/Poppins-Regular.ttf");
+    font-weight: normal;
+}
+@font-face {
+    font-family: "Open Sans";
+    src: url("fonts/Poppins-Bold.ttf");
+    font-weight: bold;
+}
+
+body{
+    font-family: "Open Sans";
+    margin: 0;
+    /* background: linear-gradient(45deg, #FFEAFD, #FF54BB); */
+    background: url('bf588d69b0af100f29041b7173961d29.jpg');
+}
+
+.contain{
+    background-color: white;
+    text-align: center;
+    width: 30%;
+    height: 350px;
+    margin: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* border: 1px solid black; */
+    box-shadow: 0px 2px 10px 1px rgb(0, 0, 0, 0.07);
+    border-radius: 20px;
+    padding: 20px;
+    transition: 0.3 ease all;
+
+    h1{
+        color: rgb(255, 141, 198);
+    }
+
+    .question{
+        height: 100px;
+        display: block;
+        padding: 10px;
+        border-radius: 10px;
+        background-color: #fff1fb;
+
+        span{
+            color: rgb(210, 70, 140);
+            font-size: 1.4em;
+            display: block;
+            margin-top: 10px;
+            font-weight: bold;
+        }
+    }
+    .div_question{
+        margin-top: 20px;
+        height: 100px;
+    }
+
+    .suivant, .vilain{
+        font-size: 1.1em;
+        color: white;
+        border-radius: 10px;
+        padding: 10px 20px;
+        width: 100px;
+        display: block;
+        margin: auto;
+        margin-top: 20px;
+        background-color: rgb(255, 141, 198);
+        border: 1px solid rgb(176, 52, 114);
+        border-bottom: 4px solid rgb(176, 52, 114);
+        border-left: 4px solid rgb(176, 52, 114);
+        transition: 0.3s ease;
+    }
+    .suivant:hover, .vilain:hover{
+        background-color: rgb(210, 70, 140);
+        border: 1px solid rgb(176, 52, 114);
+        border-top: 4px solid rgb(176, 52, 114);
+        border-right: 4px solid rgb(176, 52, 114);
+        transition: 0.3s ease;
+
+    }
+    .vilain{
+        opacity: 0;
+        transition: 0.3s ease all;
+    }
+}
+
+
+@media screen and (max-width: 500px) {
+    .contain{
+        width: 95%;
+    }
+}
